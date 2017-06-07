@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript For The World Wide Web Chapter 7 Working With Browser Windows</title>
+</head>
+<body>
+<p><a href="javascript:newWindow();">Alameda police</a>  The variable <i>window1</i> contains a new window object.  The name of the new window <i>Alameda</i> because you may reference the window in a link or another script.  The window width is 600px.  The window height is 400px.</p>
+
+<p>Loading different contents in the same window.  The opposite of focus() is blur().</p>
+<a href="javascript:newWindowloaddifferentcontents('images/alamedapolicecar001.jpg');">Alameda Police</a>
+<a href="javascript:newWindowloaddifferentcontents('images/berkeleypolicecar001.jpg');">Berkeley Police</a>
+<a href="javascript:newWindowloaddifferentcontents('images/californiahighwaypatrolpolicecar001.jpg');">California Highway Police</a>
+
+<p>Open a new window using an image link.  Single quotes a must for the javascript.</p>
+<a href="javascript:newWindowimagelinks('file:///G:/Raymond/innovateinfinitely/policecarphotoalbum/policecarphotoalbumca.html')"><img src="images/alamedapolicecar001.jpg" width="275" height="255" alt="Police Car"></a>
+<a href="javascript:newWindowimagelinks('file:///G:/Raymond/innovateinfinitely/aboutinin.html')"><img src="images/lightbulbs.jpg" width="275" height="255" alt="Lightbulbs"></a>
+<a href="javascript:newWindowimagelinks('file:///G:/Raymond/innovateinfinitely/aboutme.html')"><img src="images/questionmark.jpg" width="275" height="255" alt="Question Mark"></a>
+
+<p>Open multiple windows.</p>
+<a href="javascript:newWindowsmultiplewindows('file:///G:/Raymond/innovateinfinitely/policecarphotoalbum/policecarphotoalbumca.html')"><img src="images/alamedapolicecar001.jpg" width="275" height="255" alt="Police Car"></a>
+<a href="javascript:newWindowsmultiplewindows('file:///G:/Raymond/innovateinfinitely/aboutinin.html')"><img src="images/lightbulbs.jpg" width="275" height="255" alt="Lightbulbs"></a>
+<a href="javascript:newWindowsmultiplewindows('file:///G:/Raymond/innovateinfinitely/aboutme.html')"><img src="images/questionmark.jpg" width="275" height="255" alt="Question Mark"></a>
+
+<p>Open multiple windows simultaneously.  Obviously, don't do it.</p>
+<a href="javascript:newWindowsmultiplewindowssimultaneously();">See all Raymond's adventure pics</a>
+
+<p>Scrolling a window.  Scrollbar appears whether yes or no in Firefox and Chrome.  IE no scrollbar whether yes or no.  Maybe it's my IE settings.</p>
+<a href="javascript:newWindowScrollyes();">Scrollbar = yes</a>
+<a href="javascript:newWindowScrollno();">Scrollbar = no</a>
+
+<p>Closing a window.  I created a simple html page with the close window link.</p>
+<a href="javascript:newWindowsmultiplewindows('ch07browserwindowsclosewindow.html')">Try to close a window</a>
+
+<p>Positioning a window on the screen</p>
+<a href="javascript:positionWindow('file:///G:/Raymond/innovateinfinitely/aboutme.html')">Predetermine new open window located on user's screen.</a>
+
+<script type="text/javascript" src="ch07browserwindows.js"></script>
+</body>
+</html>

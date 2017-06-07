@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript For The World Wide Web Chapter 5 More Fun With Images</title>
+</head>
+<body onload="rotateimages(); rotateimagesurl(); randompic(); randompicevenfromthestart(); multiplerandomimages();">
+<!-- <body onload="rotateimageswait(); rotateimages();"> -->
+
+<p>Create Cycling Banners.  Advertising banners switch between images.  Cycle through images.  The cycle starts on index number 1 in the image array.</p>
+<img src="images/bartender.jpg" name="raymondbanner" alt="Raymond's Banner Adventures">
+
+<p>If you want more than one cycling banner, set up the array and the variables for each banner separately.  The cycle starts on index number 1 in the image array.</p>
+<img src="images/berkeleypolicecar001.jpg" name="raymondbanner2" width="600" height="400" alt="Raymond's Banner 2 Police Cars">
+
+<p>Make sure the user has seen all of one pic before displaying the next.</p>
+<img src="images/bartender.jpg" name="raymondbannerwait" alt="Raymond's Banner Adventures">
+
+<p>Adding links to cycling banners.  Make a banner into a link takes the visitor somewhere when the visitor clicks on the banner.</p>
+<a href="javascript:newurl();"><img src="images/summitrock.jpg" name="raymondbannerurl" width="600" height="400" alt="Raymond's Banner Links"></a>
+
+<p>Build a slideshow</p>
+<img src="images/alamedapolicetextfield.jpg" name="slideshowpic" alt="Slideshow" border="1">
+<p><a href="javascript:processprevious();">&lt;&lt; Previous</a> <a href="javascript:processnext();">Next &gt;&gt;</a></p>
+
+<p>Build a slideshow wraparound</p>
+<img src="images/alamedapolicetextfield.jpg" name="slideshowpicwraparound" alt="Slideshow Wraparound" border="1">
+<p><a href="javascript:changeslide(-1);">&lt;&lt; Previous</a> <a href="javascript:changeslide(1);">Next &gt;&gt;</a></p>
+
+<p>Display a random image</p>
+<img src="images/bartender.jpg" name="randompic" alt="Raymond's Banner Adventures">
+
+<p>Display a random image cycling images from a random image start</p>
+<img src="images/bartender.jpg" name="randompiccycle" alt="Raymond's Banner Adventures">
+
+<p>Display multiple random images</p>
+<img src="images/bartender.jpg" name="multiplerandomimages1" alt="Multiple Random Images 1"><img src="images/berkeleypolicecar001.jpg" name="multiplerandomimages2" width="600" height="400" alt="Multiple Random Images 2">
+
+<p>Combine rollover and an image map.  HTML map shape rect coords first two values is the location of the top left corner.  The last two values are the location of the bottom right corner.  Map and area are HTML tags.</p>
+<map name="roll_map" id="roll_map">
+<area shape="rect" href="#" onmouseover="document.roll.src=chapter1.src" onmouseout="document.roll.src=bookchapters.src" coords="0,0,200,200" alt="Chapter 1">
+<area shape="rect" href="#" onmouseover="document.roll.src=chapter2.src" onmouseout="document.roll.src=bookchapters.src" coords="0,200,400,400" alt="Chapter 2">
+<area shape="rect" href="#" onmouseover="document.roll.src=chapter3.src" onmouseout="document.roll.src=bookchapters.src" coords="0,400,600,600" alt="Chapter 3">
+</map>
+<a href="#" onmouseout="document.roll.src=bookchapters.src"><img usemap="#roll_map" src="images/bookchapters.jpg" border="1" name="roll"></a>
+
+<script type="text/javascript" src="ch05morefunwithimages.js"></script>
+</body>
+</html>

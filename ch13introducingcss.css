@@ -1,0 +1,56 @@
+body {
+	margin-left: 3em;
+	font-family: verdana, helvetica, arial, sans-serif;
+	font-size: 10pt;	
+	/*font-weight: bold;*/
+}
+
+blockquote {
+	font-weight: normal;
+}
+
+.character {
+	font-weight: bold;
+	margin-left: -2em;
+	margin-bottom: 1em;
+	margin-top: 1.5em;
+}
+
+.directions {
+	font-style: italic;
+}
+
+#week2 {
+	background-color: #FFFF00;
+}
+
+.gloss {
+	background-color: #00FFFF;
+}
+
+a {
+	text-decoration: none;	
+}
+a:visited {
+	color: #000000;
+}
+a:hover {
+	color: #FF0000;
+	font-size: 12pt;
+}
+
+#petruchio {
+	position: absolute;
+	top: 90px;
+	left: 550px;
+}
+#kate {
+	position: absolute;
+	top: 40px;
+	left: 700px;
+}
+#stage {
+	position: absolute;
+	top: 70px;
+	left: 450px;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript For The World Wide Web Chapter 4 Image Basics</title>
+</head>
+<body>
+
+<p>Creating Image Rollover.  onmouseout is first image.  onmouseover is rollover image.  Remember to name the image to refer to onmouseover and onmouseout.  Click on the image for the a href link.</p>
+<a href="file:///G:/Raymond/innovateinfinitely/index.html" onmouseover="document.arrow.src='images/lightbulbs.jpg'" onmouseout="document.arrow.src='images/questionmark.jpg'"><img src="images/questionmark.jpg" border = "1" name="arrow" alt="? light bulbs"></a>
+
+<p>More effective image rollover.</p>
+<a href="file:///G:/Raymond/innovateinfinitely/favoritequotes.html" onmouseover="document.bow.src=lightbulbs.src" onmouseout="document.bow.src=questionmark.src"><img src="images/questionmark.jpg" border = "1" name="bow" alt="? light bulbs"></a>
+
+<p>Multiple rollovers on a page.</p>
+<a href="file:///G:/Raymond/innovateinfinitely/myphotoalbum.html" onmouseover="document.oct.src=bartender.src" onmouseout="document.oct.src=summitrock.src"><img src="images/summitrock.jpg" border = "1" name="oct" alt="bartender summitrock"></a>
+<a href="file:///G:/Raymond/innovateinfinitely/myphotoalbum.html" onmouseover="document.nov.src=missionpeak.src" onmouseout="document.nov.src=quailcreekstatepark.src"><img src="images/quailcreekstatepark.jpg" border = "1" name="nov" alt="mission peak quail creek"></a>
+
+<p>Trigger rollover from a link.</p>
+<a href="file:///G:/Raymond/innovateinfinitely/favoritequotes.html" onmouseover="document.sam.src=lightbulbs.src" onmouseout="document.sam.src=questionmark.src">Click here to view favorite quotes.  Hover to switch images.</a>
+<img src="images/questionmark.jpg" border = "1" name="sam" alt="? light bulbs">
+
+<p>Multiple Images Change A Single Rollover</p>
+<a href="file:///G:/Raymond/innovateinfinitely/policecarphotoalbum/policecarphotoalbumca.html" onmouseover="document.policetextfield.src=alamedapolicetextfield.src" onmouseout="document.policetextfield.src=blankpolicetextfield.src"><img src="images/alamedapolicecar001.jpg" width="600" height="400" border = "1" alt="Alameda Police Car"></a>
+<a href="file:///G:/Raymond/innovateinfinitely/policecarphotoalbum/policecarphotoalbumca.html" onmouseover="document.policetextfield.src=berkeleypolicetextfield.src" onmouseout="document.policetextfield.src=blankpolicetextfield.src"><img src="images/berkeleypolicecar001.jpg" width="600" height="400" border = "1" alt="
+Berkeley Police Car"></a>
+<a href="file:///G:/Raymond/innovateinfinitely/policecarphotoalbum/policecarphotoalbumca.html" onmouseover="document.policetextfield.src=californiahighwaypatrolpolicetextfield.src" onmouseout="document.policetextfield.src=blankpolicetextfield.src"><img src="images/californiahighwaypatrolpolicecar001.jpg" width="600" height="400" border = "1" alt="
+californiahighwaypatrol Police Car"></a>
+<img src="images/blankpolicetextfield.jpg" width="600" height="400" name="policetextfield" alt="Text Field">
+
+<script type="text/javascript" src="ch04imagebasics.js"></script>
+</body>
+</html>
